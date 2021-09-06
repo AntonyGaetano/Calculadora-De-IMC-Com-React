@@ -69,9 +69,11 @@ const faltura=(a,sa)=>{
 const fcalcular=(p,a,sr)=>{
    const calc=()=>{
      sr(p/(a*a))
+
    }
    return(
      <div>
+      
        <button onClick={calc}>Calcular</button>
      </div>
    )
@@ -80,7 +82,8 @@ const fcalcular=(p,a,sr)=>{
 const fresultado=(r)=>{
   return(
     <div>
-      <p>resultado: {r.toFixed(2)}</p>
+      {console.log(r)}
+      <p>{"resultado: "+ r.toFixed(1)}</p>
     </div>
 
   )

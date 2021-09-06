@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import './App.css'
 
 const tabelaIMC=()=>{
   return(
@@ -46,7 +47,7 @@ const tabelaIMC=()=>{
 
 const fpeso=(p,sp)=>{
   return(
-    <div>
+    <div className="input-Alt-Pes">
       <label>
         Peso
         <input type="text" value={p} onChange={(e)=>sp(e.target.value)}/>
@@ -57,7 +58,7 @@ const fpeso=(p,sp)=>{
 
 const faltura=(a,sa)=>{
   return(
-    <div>
+    <div className="input-Alt-Pes">
       <label>
         Altura
         <input type="text" value={a} onChange={(e)=>sa(e.target.value)}/>
@@ -74,7 +75,7 @@ const fcalcular=(p,a,sr)=>{
    return(
      <div>
       
-       <button onClick={calc}>Calcular</button>
+       <button style={{padding:"0.5rem", marginTop:"0.7rem"}} onClick={calc}>Calcular</button>
      </div>
    )
 }
@@ -82,8 +83,7 @@ const fcalcular=(p,a,sr)=>{
 const fresultado=(r)=>{
   return(
     <div>
-      {console.log(r)}
-      <p>{"resultado: "+ r.toFixed(1)}</p>
+      <p style={{fontFamily:"cursive"}}>{"Resultado: "+ r.toFixed(1)}</p>
     </div>
 
   )
@@ -96,13 +96,14 @@ export default function App(){
   const[resultado,setResultado]=useState(0);
 
   return (
-   <>
+   <section>
+   <h1>Calculadora de IMC</h1>
    {faltura(altura,setAltura)}
    {fpeso(peso,setPeso)}
    {fcalcular(peso,altura,setResultado)}
    {fresultado(resultado)}
    {tabelaIMC()}
-   </>
+   </section>
   );
 }
 

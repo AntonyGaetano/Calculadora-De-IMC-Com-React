@@ -49,7 +49,7 @@ const fpeso=(p,sp)=>{
     <div>
       <label>
         Peso
-        <input type="text" value={p} onChange={(e)=>{sp(e.target.value)}}/>
+        <input type="text" value={p} onChange={(e)=>sp(e.target.value)}/>
       </label>
     </div>
   )
@@ -60,7 +60,7 @@ const faltura=(a,sa)=>{
     <div>
       <label>
         Altura
-        <input type="text" value={a} onChange={(e)=>{sa(e.target.value)}}/>
+        <input type="text" value={a} onChange={(e)=>sa(e.target.value)}/>
       </label>
     </div>
   )

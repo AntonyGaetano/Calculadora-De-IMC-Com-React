@@ -1,5 +1,10 @@
 import React,{useState} from "react";
 import './App.css'
+import Altura from "./Altura";
+import Peso from "./Peso";
+import Resultado from "./Resultado";
+import Calcular from "./Calcular";
+import TabelaIMC from "./TabelaIMC"
 
 const tabelaIMC=()=>{
   return(
@@ -98,11 +103,11 @@ export default function App(){
   return (
    <section>
    <h1>Calculadora de IMC</h1>
-   {faltura(altura,setAltura)}
-   {fpeso(peso,setPeso)}
-   {fcalcular(peso,altura,setResultado)}
-   {fresultado(resultado)}
-   {tabelaIMC()}
+   <Altura a={altura} sa={setAltura}/>
+   <Peso p={peso} sp={setPeso}/>
+   <Calcular p={peso} a={altura} sr={setResultado}/>
+   <Resultado r={resultado}/>
+   <TabelaIMC/>
    </section>
   );
 }

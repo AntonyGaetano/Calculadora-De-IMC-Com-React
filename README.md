@@ -76,7 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Foi usado a tag table para fazer a tabela com os dados de classficação de acordo com o resultado do IMC!
 
 
-### Loyout para notebook e desktop
+### Layout para notebook e desktop
 
 <img src="gif/app_react_telanot.gif">
 

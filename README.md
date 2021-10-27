@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Calculadora De IMC
+
+### Esse projeto foi desenvolvido para calcular o índice de massa corporal! 
+
+- Foi usado a tag table para fazer a tabela com os dados de classficação de acordo com o resultado do IMC!
+
+
+### Loyout para notebook e desktop
+
+<img src="gif/app_react_telanot.gif">
+
+
+🚀Tecnologias usadas:
+- ✔React.js
+- ✔CSS
+- ✔Hook useState
+
